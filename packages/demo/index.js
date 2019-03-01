@@ -1,4 +1,4 @@
-const all = require('@hoa-demo-lerna/core');
+const all = require('../core');
 
 for(const func in all) {
   if (all.hasOwnProperty(func)) {

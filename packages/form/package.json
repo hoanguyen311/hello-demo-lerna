@@ -10,5 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "cowsay": "^1.4.0"
-  }
+  },
+  "gitHead": "9ec75bea6ce8b98fc6157c8d8a34513d1de241a3"
 }

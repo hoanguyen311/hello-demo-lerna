@@ -1,0 +1,145 @@
+0 silly argv { _: [ 'publish' ],
+0 silly argv   composed: 'publish',
+0 silly argv   lernaVersion: '3.10.1',
+0 silly argv   '$0': 'lerna' }
+1 notice cli v3.10.1
+2 verbose rootPath /Users/hoa.nguyen-thai/Demos/hoa-demo-lerna
+3 verbose session 0d5245fe90c89dea
+4 verbose user-agent lerna/3.10.1/node@v8.15.0+x64 (darwin)
+5 silly argv { _: [ 'publish' ], composed: 'publish', lernaVersion: '3.10.1' }
+6 verbose rootPath /Users/hoa.nguyen-thai/Demos/hoa-demo-lerna
+7 info current version 0.0.0
+8 silly isAnythingCommitted
+9 verbose isAnythingCommitted 1
+10 silly currentBranch
+11 verbose currentBranch master
+12 silly remoteBranchExists
+13 silly isBehindUpstream
+14 silly isBehindUpstream master is behind origin/master by 0 commit(s) and ahead by 0
+15 silly hasTags
+16 verbose hasTags false
+17 info Looking for changed packages since initial commit.
+18 verbose updated @hoa-demo-lerna/button
+19 verbose updated @hoa-demo-lerna/core
+20 verbose updated @hoa-demo-lerna/demo
+21 verbose updated @hoa-demo-lerna/form
+22 verbose git-describe undefined => "2bbc3f4"
+23 silly git-describe parsed => {"refCount":"1","sha":"2bbc3f4","isDirty":false}
+24 silly batched [ PackageGraphNode {
+24 silly batched     name: '@hoa-demo-lerna/button',
+24 silly batched     externalDependencies: Map {},
+24 silly batched     localDependencies: Map {},
+24 silly batched     localDependents: Map {} },
+24 silly batched   PackageGraphNode {
+24 silly batched     name: '@hoa-demo-lerna/core',
+24 silly batched     externalDependencies: Map {},
+24 silly batched     localDependencies: Map {},
+24 silly batched     localDependents: Map {} },
+24 silly batched   PackageGraphNode {
+24 silly batched     name: '@hoa-demo-lerna/demo',
+24 silly batched     externalDependencies: Map {},
+24 silly batched     localDependencies: Map {},
+24 silly batched     localDependents: Map {} },
+24 silly batched   PackageGraphNode {
+24 silly batched     name: '@hoa-demo-lerna/form',
+24 silly batched     externalDependencies: Map { 'cowsay' => [Object] },
+24 silly batched     localDependencies: Map {},
+24 silly batched     localDependents: Map {} } ]
+25 silly lifecycle No script for "preversion" in "root", continuing
+26 silly lifecycle No script for "preversion" in "@hoa-demo-lerna/button", continuing
+27 silly lifecycle No script for "preversion" in "@hoa-demo-lerna/core", continuing
+28 silly lifecycle No script for "preversion" in "@hoa-demo-lerna/demo", continuing
+29 silly lifecycle No script for "preversion" in "@hoa-demo-lerna/form", continuing
+30 silly lifecycle No script for "version" in "@hoa-demo-lerna/demo", continuing
+31 silly lifecycle No script for "version" in "@hoa-demo-lerna/form", continuing
+32 silly lifecycle No script for "version" in "@hoa-demo-lerna/core", continuing
+33 silly lifecycle No script for "version" in "@hoa-demo-lerna/button", continuing
+34 silly lifecycle No script for "version" in "root", continuing
+35 silly gitAdd [ '/Users/hoa.nguyen-thai/Demos/hoa-demo-lerna/packages/demo/package.json',
+35 silly gitAdd   '/Users/hoa.nguyen-thai/Demos/hoa-demo-lerna/packages/form/package.json',
+35 silly gitAdd   '/Users/hoa.nguyen-thai/Demos/hoa-demo-lerna/packages/core/package.json',
+35 silly gitAdd   '/Users/hoa.nguyen-thai/Demos/hoa-demo-lerna/packages/button/package.json',
+35 silly gitAdd   '/Users/hoa.nguyen-thai/Demos/hoa-demo-lerna/lerna.json' ]
+36 silly gitCommit v0.0.1
+37 verbose git [ 'commit', '-m', 'v0.0.1' ]
+38 silly gitTag v0.0.1
+39 verbose git [ 'tag', 'v0.0.1', '-m', 'v0.0.1' ]
+40 silly lifecycle No script for "postversion" in "@hoa-demo-lerna/button", continuing
+41 silly lifecycle No script for "postversion" in "@hoa-demo-lerna/core", continuing
+42 silly lifecycle No script for "postversion" in "@hoa-demo-lerna/demo", continuing
+43 silly lifecycle No script for "postversion" in "@hoa-demo-lerna/form", continuing
+44 silly lifecycle No script for "postversion" in "root", continuing
+45 info git Pushing tags...
+46 silly gitPush origin master
+47 silly batched [ PackageGraphNode {
+47 silly batched     name: '@hoa-demo-lerna/button',
+47 silly batched     externalDependencies: Map {},
+47 silly batched     localDependencies: Map {},
+47 silly batched     localDependents: Map {} },
+47 silly batched   PackageGraphNode {
+47 silly batched     name: '@hoa-demo-lerna/core',
+47 silly batched     externalDependencies: Map {},
+47 silly batched     localDependencies: Map {},
+47 silly batched     localDependents: Map {} },
+47 silly batched   PackageGraphNode {
+47 silly batched     name: '@hoa-demo-lerna/demo',
+47 silly batched     externalDependencies: Map {},
+47 silly batched     localDependencies: Map {},
+47 silly batched     localDependents: Map {} },
+47 silly batched   PackageGraphNode {
+47 silly batched     name: '@hoa-demo-lerna/form',
+47 silly batched     externalDependencies: Map { 'cowsay' => [Object] },
+47 silly batched     localDependencies: Map {},
+47 silly batched     localDependents: Map {} } ]
+48 info publish Publishing packages to npm...
+49 info Verifying npm credentials
+50 verbose Retrieving npm user profile
+51 http fetch GET 200 https://registry.npmjs.org/-/npm/v1/user 1647ms
+52 silly npm profile get received {"tfa":false,"name":"hoa.nguyen-thai","email":"thaihoa311@gmail.com","email_verified":true,"created":"2015-09-01T06:42:58.211Z","updated":"2018-11-30T03:53:26.466Z","cidr_whitelist":null,"fullname":"Harry Nguyen","twitter":"","github":"hoanguyen311"}
+53 silly npm whoami received {"username":"hoa.nguyen-thai"}
+54 silly verifyNpmPackageAccess
+55 http fetch GET 200 https://registry.npmjs.org/-/org/hoa.nguyen-thai/package?format=cli 678ms
+56 warn ENOLICENSE Packages @hoa-demo-lerna/button, @hoa-demo-lerna/core, @hoa-demo-lerna/demo, @hoa-demo-lerna/form are missing a license
+57 silly getCurrentSHA
+58 verbose getCurrentSHA 9ec75bea6ce8b98fc6157c8d8a34513d1de241a3
+59 silly lifecycle No script for "prepublish" in "root", continuing
+60 silly lifecycle No script for "prepare" in "root", continuing
+61 silly lifecycle No script for "prepublishOnly" in "root", continuing
+62 silly lifecycle No script for "prepack" in "root", continuing
+63 verbose pack-directory packages/button
+64 verbose pack-directory packages/core
+65 verbose pack-directory packages/demo
+66 verbose pack-directory packages/form
+67 silly lifecycle No script for "prepublish" in "@hoa-demo-lerna/button", continuing
+68 silly lifecycle No script for "prepublish" in "@hoa-demo-lerna/core", continuing
+69 silly lifecycle No script for "prepublish" in "@hoa-demo-lerna/demo", continuing
+70 silly lifecycle No script for "prepublish" in "@hoa-demo-lerna/form", continuing
+71 silly lifecycle No script for "prepare" in "@hoa-demo-lerna/button", continuing
+72 silly lifecycle No script for "prepare" in "@hoa-demo-lerna/core", continuing
+73 silly lifecycle No script for "prepare" in "@hoa-demo-lerna/demo", continuing
+74 silly lifecycle No script for "prepare" in "@hoa-demo-lerna/form", continuing
+75 silly lifecycle No script for "prepublishOnly" in "@hoa-demo-lerna/form", continuing
+76 silly lifecycle No script for "prepublishOnly" in "@hoa-demo-lerna/core", continuing
+77 silly lifecycle No script for "prepublishOnly" in "@hoa-demo-lerna/demo", continuing
+78 silly lifecycle No script for "prepublishOnly" in "@hoa-demo-lerna/button", continuing
+79 silly lifecycle No script for "prepack" in "@hoa-demo-lerna/form", continuing
+80 silly lifecycle No script for "prepack" in "@hoa-demo-lerna/core", continuing
+81 silly lifecycle No script for "prepack" in "@hoa-demo-lerna/demo", continuing
+82 silly lifecycle No script for "prepack" in "@hoa-demo-lerna/button", continuing
+83 silly lifecycle No script for "postpack" in "@hoa-demo-lerna/form", continuing
+84 verbose packed @hoa-demo-lerna/form packages/form
+85 silly lifecycle No script for "postpack" in "@hoa-demo-lerna/core", continuing
+86 verbose packed @hoa-demo-lerna/core packages/core
+87 silly lifecycle No script for "postpack" in "@hoa-demo-lerna/demo", continuing
+88 verbose packed @hoa-demo-lerna/demo packages/demo
+89 silly lifecycle No script for "postpack" in "@hoa-demo-lerna/button", continuing
+90 verbose packed @hoa-demo-lerna/button packages/button
+91 silly lifecycle No script for "postpack" in "root", continuing
+92 verbose publish @hoa-demo-lerna/button
+93 verbose publish @hoa-demo-lerna/core
+94 verbose publish @hoa-demo-lerna/demo
+95 verbose publish @hoa-demo-lerna/form
+96 http fetch PUT 402 https://registry.npmjs.org/@hoa-demo-lerna%2fbutton 694ms
+97 error Error: 402 Payment Required - PUT https://registry.npmjs.org/@hoa-demo-lerna%2fbutton - You must sign up for private packages
+97 error     at res.buffer.catch.then.body (/Users/hoa.nguyen-thai/.nvm/versions/node/v8.15.0/lib/node_modules/lerna/node_modules/npm-registry-fetch/check-response.js:104:15)
+97 error     at <anonymous>
