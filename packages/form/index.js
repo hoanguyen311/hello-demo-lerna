@@ -1,5 +1,5 @@
 const cowsay = require('cowsay');
 
 module.exports = function() {
-  cowsay('render form');
+  console.log(cowsay.say({ text: 'render form', cow: cowsay.SQUIRREL }));
 };
