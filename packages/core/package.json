@@ -1,6 +1,6 @@
 {
   "name": "@hoa-demo-lerna/core",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@hoa-demo-lerna/button": "0.0.2",
-    "@hoa-demo-lerna/form": "0.0.2"
+    "@hoa-demo-lerna/button": "^0.0.3",
+    "@hoa-demo-lerna/form": "^0.0.3"
   }
 }
